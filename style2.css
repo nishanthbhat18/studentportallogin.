@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab';
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 50em;
+    background-image: url(imgs/nitte-campus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(6px);
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    color: white;
+
+}
+
+@keyframes sliding-text {}
+
+
+form {
+    border-radius: 5px;
+    background-color: rgb(247, 247, 247);
+    color: rgb(235, 228, 4);
+    padding: 20px;
+    width: 30em;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+section label {
+    align-self: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: 1px solid black;
+}
+
+button {
+    width: 100%;
+    font-size: medium;
+    background-color: rgb(37, 37, 135);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropbtn {
+    background-color: white;
+    color: rgb(0, 0, 145);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content p:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#success {
+    display: none;
+}

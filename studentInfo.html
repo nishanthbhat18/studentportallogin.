@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>You are here because you wanted to register to the portal.</header>
+    <form action="">
+        <h1>Student Details</h1>
+        <section>
+            <label for="usn">USN</label>
+            <input type="text" name="usn" id="usn" placeholder="NM2xCSxxx">
+        </section>
+        <section>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="SRK">
+        </section>
+        <section>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="nm2xcsxxx@nmamit.in">
+        </section>
+        <section>
+            <label for="semester">Semester</label>
+            <div class="dropdown">
+                <input class="dropbtn" type="number" name="semester" id="semester" placeholder="3">
+                <div class="dropdown-content">
+                    <p onclick="document.getElementById('semester').value=1">1</p>
+                    <p onclick="document.getElementById('semester').value=2">2</p>
+                    <p onclick="document.getElementById('semester').value=3">3</p>
+                    <p onclick="document.getElementById('semester').value=4">4</p>
+                    <p onclick="document.getElementById('semester').value=5">5</p>
+                    <p onclick="document.getElementById('semester').value=6">6</p>
+                    <p onclick="document.getElementById('semester').value=7">7</p>
+                    <p onclick="document.getElementById('semester').value=8">8</p>
+                </div>
+            </div>
+            <label for="section">Section</label>
+            <input type="text" name="section" id="section" placeholder="D">
+        </section>
+        <section>
+            <label for="branch">Branch</label>
+            <input type="text" name="branch" id="branch" placeholder="Computer Science and Engineering">
+        </section>
+        <button>Submit</button>
+    </form>
+    <form action="" id="success">
+        <img src="imgs/success.jpg" alt="">
+        <h6>Student registered to the portal successfully!</h6>
+    </form>
+
+
+</body>
+
+</html>
